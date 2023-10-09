@@ -10,6 +10,7 @@ This page serves as a brief introduction to Botsu, and provides information on w
 This guide is intended to help you get started with Botsu, and to help you understand how to use Botsu's features.
 
 For information useful for more advanced usage, see the [Reference Guide](/reference/).
+**(Coming Soon)**
 
 For information on self-hosting, see the [Self-Hosting Guide](/self-hosting/introduction).  
 
