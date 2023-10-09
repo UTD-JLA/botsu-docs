@@ -29,7 +29,12 @@ export default defineConfig({
       },
       {
         text: 'Self-Hosting',
-        items: []
+        items: [
+          { text: 'Introduction', link: '/self-hosting/introduction' },
+          { text: 'Database Setup', link: '/self-hosting/database' },
+          { text: 'Configuration', link: '/self-hosting/configuration' },
+          { text: 'Data Sources', link: '/self-hosting/data' },
+        ]
       },
     ],
 
