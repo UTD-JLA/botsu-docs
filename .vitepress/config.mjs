@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/botsu-docs/',
   title: "Botsu",
   description: "Documentation for Botsu bot",
   themeConfig: {
