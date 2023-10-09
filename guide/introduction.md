@@ -11,7 +11,7 @@ This guide is intended to help you get started with Botsu, and to help you under
 
 For information useful for more advanced usage, see the [Reference Guide](/reference/).
 
-For information on self-hosting, see the [Self-Hosting Guide](/self-hosting/).  
+For information on self-hosting, see the [Self-Hosting Guide](/self-hosting/introduction).  
 
 ## What is Botsu?
 Botsu is a Discord bot for logging time spent on Japanese media.
