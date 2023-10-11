@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Exports
 The export feature allows you to export your immersion logs from Botsu.
 This is a useful feature if you want to analyze your immersion logs yourself.
@@ -15,7 +19,11 @@ activties-<user_id>-<timestamp>.jsonl.gz
 This means they can be sorted by user and export date.
 
 ## Example Usage
-Here is a simple example of how to consume an export file in Python:
+Here are some examples of how to use the export files. These examples will show
+you how to print the name of each activity in the export file, but you can
+modify them to do whatever you want.
+
+### Python
 ```python
 import gzip
 import json
@@ -25,13 +33,14 @@ with gzip.open("activities-<user_id>-<timestamp>.jsonl.gz", "rt") as f:
         activity = json.loads(line)
         print(activity["name"])
 ```
-or in Bash:
+
+### Bash
 ```bash
 zcat 'activities-<user_id>-<timestamp>.jsonl.gz' | jq -r ".name"
 ```
 
-## Using the Go package
-The Go library provides a convenient way to consume export files.
+### Go Package
+The Go package provides a convenient way to consume export files.
 Here is an example of how to use it:
 ```go
 package main
