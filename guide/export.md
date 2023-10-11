@@ -11,6 +11,6 @@ is a gzipped JSONL file, which means that you will need to unzip it before you c
 
 The file will have the following format: `activities-{user_id}-{iso_date}.jsonl.gz`. 
 
-For more information on the format of the JSONL file, see the [Reference Guide](/reference/).
+For more information on the format of the JSONL file, see the [Reference Guide](/reference/exports).
 
 This command is rate limited so you should wait a while before trying again if you get an error.

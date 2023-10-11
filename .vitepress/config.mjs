@@ -24,10 +24,14 @@ export default defineConfig({
           { text: 'Exporting', link: '/guide/export' },
         ]
       },
-      // {
-      //   text: 'Reference Guide',
-      //   items: []
-      // },
+      {
+        text: 'Reference Guide',
+        items: [
+          { text: 'Introduction', link: '/reference/introduction' },
+          { text: 'Activity', link: '/reference/activity' },
+          { text: 'Using Exports', link: '/reference/exports' },
+        ]
+      },
       {
         text: 'Self-Hosting',
         items: [
