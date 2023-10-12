@@ -46,38 +46,42 @@ Here is an example of how to use it:
 package main
 
 import (
-    "flag"
-    "fmt"
-    "log"
-    "os"
+	"flag"
+	"fmt"
+	"os"
 
-    "github.com/UTD-JLA/botsu/pkg/activities"
+	"github.com/UTD-JLA/botsu/pkg/activities"
 )
 
 var path = flag.String("path", "", "path to export file")
 
 func main() {
-    flag.Parse()
+	flag.Parse()
 
-    if *path == "" {
-        log.Fatal("path is required")
-    }
+	if *path == "" {
+		fmt.Fprintln(os.Stderr, "path is required")
+		os.Exit(1)
+	}
 
-    f, err := os.Open(*path)
+	f, err := os.Open(*path)
 
-    if err != nil {
-        log.Fatal(err)
-    }
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "failed to open file: %v\n", err)
+		os.Exit(1)
+	}
 
-    activities, err := activities.ReadCompressedJSONL(f)
+	defer f.Close()
 
-    if err != nil {
-        log.Fatal(err)
-    }
+	activities, err := activities.ReadCompressedJSONL(f)
 
-    for _, activity := range activities {
-        fmt.Println(activity.Name)
-    }
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "failed to read activities: %v\n", err)
+		os.Exit(1)
+	}
+
+	for _, activity := range activities {
+		fmt.Println(activity.Name)
+	}
 }
 ```
 
