@@ -1,7 +1,7 @@
 # Summary
 
 [Introduction](./introduction.md)
-
+[Screenshots](./screenshots.md)
 - [Usage](./usage/README.md)
   - [Configuration](./usage/configuration.md)
   - [Guild Configuration](./usage/guild-configuration.md)

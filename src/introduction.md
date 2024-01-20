@@ -14,7 +14,9 @@ This guide goes over how to use Botsu as a user, guild admin, and for
 self-hosting. 
 
 ## Invite Botsu
-You can invite a public instance of Botsu to your server with [this link](todo).
+You can invite a public instance of Botsu to your server with [this link](https://discord.com/api/oauth2/authorize?client_id=1198042151452426332&permissions=2147483648&scope=bot).
+
+See some [screenshots](./screenshots.md) of the bot in action.
 
 ## Support
 Issues and feature requests can be submitted on the [GitHub repository](https://github.com/UTD-JLA/botsu/issues).
