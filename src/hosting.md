@@ -7,8 +7,8 @@ This section will cover how to host your own instance of the bot.
 - PostgreSQL
 
 ## Installation
-Use `go install github.com/xoltia/botsu/cmd/botsu@latest` to install the bot.
-Alternatively, view the [releases](https://github.com/xoltia/botsu/releases) page for pre-built binaries.
+Use `go install github.com/xoltia/UTD-JLA/cmd/botsu@latest` to install the bot.
+Alternatively, view the [releases](https://github.com/UTD-JLA/botsu/releases) page for pre-built binaries.
 
 ## Database Setup
 You will need to create a database and user for Botsu. The user should have full access to the database.
