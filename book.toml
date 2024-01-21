@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Botsu Documentation"
+
+[output.html]
+additional-css = ["./theme/theme.css"]
+default-theme = "botsu"
+preferred-dark-theme = "botsu"
